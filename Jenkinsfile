@@ -13,9 +13,9 @@ pipeline {
         stage('checkout') {
             steps {
                  script{
-                        dir("terraform")
+                        dir('terraform')
                         {
-                            git "https://github.com/praveen123d/project1.git"
+                            git branch: 'master', url: 'https://github.com/praveen123d/project1.git'
                         }
                     }
                 }
