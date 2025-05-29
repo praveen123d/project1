@@ -13,10 +13,10 @@ pipeline {
         stage('checkout') {
             steps {
                  script{
-                        dir('terraform')
-                        {
-                            git branch: 'master', url: 'https://github.com/praveen123d/project1.git'
-                        }
+                        dir('terraform') {
+                            git branch: 'main', url: 'https://github.com/praveen123d/project1.git'
+                    }
+
                     }
                 }
             }
